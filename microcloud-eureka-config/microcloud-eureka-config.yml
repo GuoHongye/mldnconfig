@@ -19,9 +19,9 @@ eureka:
   server: 
     enable-self-preservation: true # 设为false，关闭自我保护，理论上只有关闭自我保护后才可以剔除服务，但是即使不关闭也可以剔除
   instance:
-    hostname: eureka-config.com      # 定义Eureka的实例主机名称
+    hostname: eurekaserver.com      # 定义Eureka的实例主机名称
   client:
     service-url:                  # 定义服务地址
-      defaultZone: http://eureka-7.com:7001/eureka/
+      defaultZone: http://edmin:mldnjava@eurekaserver.com:7001/eureka
     fetch-registry: false # 表示是否从eureka服务器获取注册信息，由于是单独运行，所以不需要获取
     register-with-eureka: false # 表示是否注册自身到eureka服务器，因为当前这个应用就是eureka服务器，没必要注册自身，所以这里是false，如果不配置会报错
