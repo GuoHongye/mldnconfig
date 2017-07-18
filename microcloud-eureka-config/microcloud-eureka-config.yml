@@ -9,19 +9,6 @@ spring:
   profiles: dev
   application:
     name: microcloud-eureka-config    # 定义应用项目的名称
-security:
-  basic:
-    enabled: true # 启用安全认证
-  user:
-    name: edmin     # 用户名
-    password: '{cipher}AQCZEYXJ0kwBwYhMYmHs7VEt/OlWqjRcq+6GpX31QzRVBBlzOKxdCJxkmtOxYbdyJ9Gl3UCL8njmVCNPaAsoiT10Tyhw7lnU4vKSiH76WF2WwLShpsbB8BNIwe5ik8im86FmigfCIDR2YAfu7TkABXfqaUMR0t6zUMAaeZl4PSGWmr420dL3guP3e5GY4IfYWPlvPjWZJWPg+3wR4wQlbUf5SRnNrbLQLSNlOZkyiEOVaQdZDxeHAN41gZmFJF2t15aQfvRAifjWT/oGd2FXtr+sDxXurOBw+y+hdh6Ho/9qOMXKdlr/1vmptw10Um0JO5akhqiLLHsSp3JGxPqj11NPKqQvwESN/cTa6aO3V/n9m9+kh5+GhENlwwFUdtknyeM=' # 密码
-eureka:
-  server: 
-    enable-self-preservation: true # 设为false，关闭自我保护，理论上只有关闭自我保护后才可以剔除服务，但是即使不关闭也可以剔除
-  instance:
-    hostname: eurekaserver.com      # 定义Eureka的实例主机名称
-  client:
-    service-url:                  # 定义服务地址
-      defaultZone: http://edmin:mldnjava@eurekaserver.com:7001/eureka
-    fetch-registry: false # 表示是否从eureka服务器获取注册信息，由于是单独运行，所以不需要获取
-    register-with-eureka: false # 表示是否注册自身到eureka服务器，因为当前这个应用就是eureka服务器，没必要注册自身，所以这里是false，如果不配置会报错
+info: 
+  app.name: microcloud-eureka-config
+  app.version: v1.0.0
