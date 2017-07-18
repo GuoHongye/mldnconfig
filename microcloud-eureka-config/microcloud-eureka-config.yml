@@ -10,5 +10,5 @@ spring:
   application:
     name: microcloud-eureka-config    # 定义应用项目的名称
 info: 
-  app.name: microcloud-eureka-config-9
-  app.version: v9.0.0
+  app.name: microcloud-eureka-config-1
+  app.version: v1.0.0
