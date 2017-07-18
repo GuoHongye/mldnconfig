@@ -1,7 +1,7 @@
 spring:
   profiles:
     active:
-    - dev-------------hello
+    - dev
 ---
 server:
   port: 7001
